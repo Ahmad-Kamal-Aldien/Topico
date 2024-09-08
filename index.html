@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <link href="CSS/style.css" rel="stylesheet">
 
@@ -104,11 +105,62 @@
         </div>
     </div>
 
+<section  class="slider container">
 
- 
+
+    <div class="slider-left" >
+        <h2><i class="fa-solid fa-bars"></i>shop by department</h2>
+       <div class="slider-links">
+        <a href="">all category</a>
+        <a href="">best saller products</a>
+        <a href="">new arrivals</a>
+        <a href="">top 10 offers</a>
+        <a href="">phones & tablets</a>
+        <a href="">electronics & digtale</a>
+        <!-- <a href="">fashion & closthings</a>
+        <a href="">jewelry & watches</a>
+        <a href="">tv &audio</a> -->
+       </div>
+    </div>
+    <div class="slider-right">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href=""><img src="Image/slider-01.jpg"></a>
+              </div>
+              <div class="swiper-slide">
+                <a href=""><img src="Image/slider-02.jpg"></a>
+              </div>
+              <div class="swiper-slide">
+                <a href=""><img src="Image/slider-03.jpg"></a>
+              </div>
+              
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+    </div>
+
+</section>
+
    
     <script src="JS/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullests:true,
+          clickable:true
+        },
+        autoplay:{
+            deleay:2500,
+
+        },
+        loop:true
+      });
+    </script> 
 
     
 </body>
